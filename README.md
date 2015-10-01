@@ -84,7 +84,17 @@ koa.listen(3000);
 
 ###Url to test
 
+####GET
+
 * http://localhost:3000/users/
 * http://localhost:3000/users/1
 * http://localhost:3000/users/1/bets
 * http://localhost:3000/users/1/bets/2
+
+
+####POST
+
+* http://localhost:3000/users/
+* http://localhost:3000/users/1/bets
+
+Post method save only in memory

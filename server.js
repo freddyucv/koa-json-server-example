@@ -1,12 +1,12 @@
 var koa    = require('koa')();
 var Router = require('koa-router');
-var jsonServer = require('./koa-json-server');
+var jsonServer = require('koa-json-server');
 var jsonBody = require('koa-json-body');
 
 var koaRouter = new Router();
 
 koa.use(jsonBody());
-koa.use(jsonServer('./db'));
+koa.use(jsonServer(__dirname + '/db'));
 
 koaRouter.get('/hello', function *(next) {
   this.body = 'Hello World!';
