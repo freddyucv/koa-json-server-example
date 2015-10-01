@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa-json-server": "^0.1.0"
+    "koa-json-server": "^0.1.0",
+    "koa-json-body": "^4.0.0"
   }
 }
